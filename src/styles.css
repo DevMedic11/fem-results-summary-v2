@@ -58,10 +58,18 @@ body {
     //border: 2px red solid;
     border-radius: 12px;
     margin: 0.75rem auto;
+    padding: 0 1rem;
     width: 80%;
     display: flex;
     justify-content: space-between;
   }
+
+  .summary-header{
+    //border: 2px red solid;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
   .summary-label {
     width: 30%;
     display: flex;
