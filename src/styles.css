@@ -7,6 +7,18 @@ body {
   margin: 0 auto;
 }
 
+.App{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+button {
+  align-self: center;
+}
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
 @media screen and (max-width: 450px) and (max-height: 750px){
   .Result {
     box-sizing: border-box;
@@ -125,9 +137,11 @@ body {
     color: white;
     background-color: hsl(224, 30%, 27%);
     border-radius:48px;
+    
   }
 }
 
+/*Large Mobile devices */
 @media screen and (min-width: 375px )and (min-height: 751px){
     .Result {
     box-sizing: border-box;
@@ -207,6 +221,143 @@ body {
   .summary-header{
     text-align: left;
     padding-left: 1.5rem;
+    margin: .5rem auto;
+    color: hsl(224, 30%, 27%);
+    font-size: 1.25rem;
+  }
+
+  .summary-label {
+    width: 30%;
+    height:min-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .summary-text{
+    padding-left: .5rem; 
+    font-size: 1rem;
+  }
+  .summary-icon{ 
+    width: 20px;
+  }
+
+  .score-text{
+    color: hsl(224, 30%, 66%);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .score-text span {
+    color: hsl(224, 30%, 27%);
+  }
+
+  button {
+    border-style: none;
+    width: 81%;
+    padding: .75rem 1.75rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-size: .87rem;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius:48px;
+  }
+}
+
+@media screen and (orientation: landscape){
+  .App{
+    //border: 3px red solid;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    width: 54vw;
+    position:absolute;
+    top: 21%;
+    left:23%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 3px 12px 27px hsl(241, 100%, 89%);
+  }
+  .panel-right{
+    align-self: center;
+  }
+  .Result {
+    box-sizing: border-box;
+    color: hsl(0, 0%, 100%);
+    padding: .5rem 1rem;
+    max-width: 40%;
+    min-height: 60vh;
+    border-radius: 25px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .Result .result-header {
+    margin: .5rem 0;
+    color: hsl(241, 100%, 89%);
+    font-size: 1.25rem;
+  }
+  
+  .Result p {
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+  }
+  
+  .result-circle {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+  }
+  
+  .result-circle span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: .25rem;
+  }
+  .result-circle .of-100{
+    color: hsl(252, 100%, 67%);
+  }
+  .result-great{
+    margin: .5rem auto .5rem auto;
+    font-size: 2rem;
+  }
+  
+  .result-para{
+    max-width: 80%;
+    margin-top: 0;
+    margin-bottom:2rem;
+  }
+
+  /*Summary Section Design*/
+  .summary-container{
+    min-width:27vw;
+  }
+  .Summary {
+    border-radius: 12px;
+    margin: .75rem auto;
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+  }
+
+  .summary-header{
+    text-align: left;
     margin: .5rem auto;
     color: hsl(224, 30%, 27%);
     font-size: 1.25rem;
