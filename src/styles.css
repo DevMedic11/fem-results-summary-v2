@@ -266,7 +266,6 @@ button:hover {
 
 @media screen and (orientation: landscape){
   .App{
-    //border: 3px red solid;
     flex-direction: row;
     justify-content: start;
     align-items: center;
@@ -398,5 +397,37 @@ button:hover {
     color: white;
     background-color: hsl(224, 30%, 27%);
     border-radius:48px;
+  }
+}
+
+/*Tablet portrait mode*/
+
+@media screen and (orientation: portrait) and (min-width: 700px){
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .App{
+    box-shadow: 3px 12px 27px hsl(241, 100%, 89%);
+    border-radius: 25px;
+    padding-bottom: 1rem;
+  }
+  .Result{
+    border-radius: 25px;
+  }
+  .result-circle {
+    height: 175px;
+    width: 175px;
+  }
+  .result-great{
+    font-size: 3rem;
+  }
+  .summary-container{
+   height: min-content;
+  }
+
+  .summary-header{
+    font-size: 2rem;
   }
 }
